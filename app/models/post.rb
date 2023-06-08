@@ -2,7 +2,7 @@ class Post < ApplicationRecord
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
-  
+
   after_save :update_posts_counter
 
   def most_recent_comments
@@ -14,5 +14,4 @@ class Post < ApplicationRecord
   def update_posts_counter
     author.increment!(:posts_counter)
   end
-
 end
