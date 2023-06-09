@@ -3,7 +3,7 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  validates :posts_counter, presence: true
+  validates :title, presence: true
 
   after_save :update_posts_counter
 
