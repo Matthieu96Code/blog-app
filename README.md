@@ -40,9 +40,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **set a rails new project call blog app.**
-- **Blog app has Postgres database set up.**
-- **Blog app schema.**
+- **Setup and controllers.**
+- **Creating a data model.**
+- **Processing data in models.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,9 +116,9 @@ Run: rspec to run tests
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Controllers specs.**
-- [ ] **Creating a data model.**
-- [ ] **Processing data in models.**
+- [ ] **Add Validation.**
+- [ ] **Add Device.**
+- [ ] **Add authorization rules.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
