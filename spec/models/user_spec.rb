@@ -28,9 +28,9 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe "#recent_posts" do
-    it "should return the 3 most recent posts" do
-      5.times do |i|
+  describe '#recent_posts' do
+    it 'should return the 3 most recent posts' do
+      5.times do |_i|
         Post.create(author: subject, title: 'greeting', text: 'hello word')
       end
 
