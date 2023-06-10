@@ -43,6 +43,7 @@
 - **Setup and controllers.**
 - **Creating a data model.**
 - **Processing data in models.**
+- **Validations, Model specs, and n+1 problems.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,7 +117,7 @@ Run: rspec to run tests
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Validation.**
+- [ ] **Integration specs for Views.**
 - [ ] **Add Device.**
 - [ ] **Add authorization rules.**
 
