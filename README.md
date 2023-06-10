@@ -7,7 +7,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -43,15 +42,7 @@
 - **Setup and controllers.**
 - **Creating a data model.**
 - **Processing data in models.**
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> coming soon
+- **Validations, Model specs, and n+1 problems.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +107,7 @@ Run: rspec to run tests
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Validation.**
+- [ ] **Integration specs for Views.**
 - [ ] **Add Device.**
 - [ ] **Add authorization rules.**
 
