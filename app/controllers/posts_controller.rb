@@ -2,6 +2,6 @@ class PostsController < ApplicationController
   def index; end
 
   def show
-    @pid = params[:id]
+    @post_id = params[:id]
   end
 end
