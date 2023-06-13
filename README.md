@@ -43,6 +43,7 @@
 - **Creating a data model.**
 - **Processing data in models.**
 - **Validations, Model specs, and n+1 problems.**
+- **Set controllers.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
