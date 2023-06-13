@@ -8,6 +8,11 @@ RSpec.describe "Users", type: :request do
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
     end
+    
+    it 'should render users/index template' do
+      get "/users"
+      expect(response).to render_template('index')
+    end
   end
 
   describe "GET/users/:id" do
@@ -16,6 +21,11 @@ RSpec.describe "Users", type: :request do
       get "/users/:id"
       expect(response).to have_http_status(:success)
       expect(response.status).to eq(200)
+    end
+
+    it 'should render users/index template' do
+      get "/users/:id"
+      expect(response).to render_template('show')
     end
   end
 end
