@@ -28,7 +28,7 @@ RSpec.describe "Users", type: :request do
       expect(response.status).to eq(200)
     end
 
-    it 'should render users/index template' do
+    it 'should render users/show template' do
       get "/users/:id"
       expect(response).to render_template('show')
     end
