@@ -5,7 +5,7 @@
     <% end %>
     <% @user.posts.each do |post| %>
         <%= render "shared/post", post: post %>
-        <%= render "shared/comment", comments: post.comments[0, 5] %>
+        <%= render "shared/comment", comments: post.most_recent_comments[0, 5] %>
     <% end %>
 
 <button class="btn-pagination" type="button">Pagination</button>

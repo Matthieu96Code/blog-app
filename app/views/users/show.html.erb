@@ -7,10 +7,12 @@
 <section class="posts-section">
   <ul>
     <% for post_i in 0...3 do %>
-      <p><%='No posts' if !@current_user.posts[0]%></p>
-      <% break if !@current_user.posts[post_i]%>
+      <% if !@current_user.most_recent_posts[0]%>
+        <p class="empty-post">No posts</p>
+        <% break if !@current_user.most_recent_posts[post_i]%>
+      <% end %>      
         <li class="posts-list">
-          <%=render 'shared/post', post: @current_user.posts[post_i]%>
+          <%=render 'shared/post', post: @current_user.most_recent_posts[post_i]%>
         </li>
       <%end%>
   </ul>
