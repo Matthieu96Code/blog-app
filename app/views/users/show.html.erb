@@ -2,11 +2,11 @@
 <div><%=@current_user.bio%></div>
 
 <ul>
-  <% for post_i in 1..3 do %>
-     <p><%='No posts' if !@current_user.posts[-1]%></p>
-     <% break if !@current_user.posts[-post_i]%>
+  <% for post_i in 0...3 do %>
+    <p><%='No posts' if !@current_user.posts[0]%></p>
+    <% break if !@current_user.posts[post_i]%>
       <li>
-        <%=render 'shared/post', post: @current_user.posts[-post_i]%>
+        <%=render 'shared/post', post: @current_user.posts[post_i]%>
       </li>
     <%end%>
 </ul>
