@@ -1,13 +1,11 @@
-<h1>Here is a list of posts for a given user</h1>
-<ul>
-<% @posts.each do |post| %>
-  <li>
-    <a href=<%="posts/#{post.id}"%>>
-      <div>
-        <p><%= post.title %></p>
-        <p><%= post.text %></p>
-      </div>
-    </a>
-  </li>
-<% end %>
-</ul>
+<%= render "shared/user", user: @user %>
+
+<% if @user.posts.empty? %>
+        <p>No post</p>
+    <% end %>
+    <% @user.posts.each do |post| %>
+        <%= render "shared/post", post: post %>
+        <%= render "shared/comment", comments: post.comments %>
+    <% end %>
+
+<button type="button">Pagination</button>

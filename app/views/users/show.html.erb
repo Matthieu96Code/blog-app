@@ -3,7 +3,7 @@
 
 <ul>
   <% for post_i in 1..3 do %>
-     <p><%'No posts' if !@current_user.posts[-post_i]%></p>
+     <p><%='No posts' if !@current_user.posts[-1]%></p>
      <% break if !@current_user.posts[-post_i]%>
       <li>
         <%=render 'shared/post', post: @current_user.posts[-post_i]%>

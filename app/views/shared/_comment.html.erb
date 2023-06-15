@@ -1,0 +1,11 @@
+<ul>
+  <% if comments.empty? %>
+      <p>No comment</p>
+  <% else %>
+    <% comments.each do |comment| %>
+      <li>
+        <div><%=comment.author.name%> : <%=comment.text%></div>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
