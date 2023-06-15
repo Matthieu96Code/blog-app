@@ -18,14 +18,20 @@ ul {
 .user-card {
   margin: 2rem;
   display: flex;
+  justify-content: space-between;
+}
+
+.user-card img {
   border: solid 2px black;
 }
 
 .user-card a {
-  width: 100%;
-  margin: 0 2rem;
+  flex-grow: 1;
+  margin: 0 0 0 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  border: solid 2px black;
 }
 
 .user-card div {
@@ -34,4 +40,29 @@ ul {
 
 .user-card h2 {
   align-self: center;
+}
+
+/* Bio section */
+
+.bio-section,
+.post-card {
+  margin: 2rem;
+  border: solid 2px black;
+}
+
+.bio-section h2,
+.bio-section div,
+.post-card h2,
+.post-card div {
+  margin: 0.5rem;
+}
+
+.comments-and-likes {
+  text-align: end;
+}
+
+.all-posts {
+  width: 8rem;
+  height: 2rem;
+  margin: 0 calc(50% - 4rem);
 }
