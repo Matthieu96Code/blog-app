@@ -75,3 +75,12 @@ ul {
   height: 2rem;
   margin: 0 calc(50% - 4rem);
 }
+
+.comments-list {
+  margin: 0.5rem 2rem 2rem 2rem;
+  border: solid 2px black;
+}
+
+.posts-show {
+  margin-top: 2rem;
+}

@@ -1,8 +1,8 @@
-<article>
-  <div>
-  <h2><%=@post.title%> by <%=@post.author.name%></h2>
-  <div>Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></div>
+<section class="posts-show " >
+  <div class="post-card">
+    <h2><%=@post.title%> by <%=@post.author.name%></h2>
+    <div>Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></div>
+    <div><%=@post.text%></div>
   </div>
-  <div><%=@post.text%></div>
-</article>
+</section>
   <%= render 'shared/comment', comments: @post.comments[0, 10]%>
