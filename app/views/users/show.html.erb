@@ -1,1 +1,25 @@
 <h1>show user <%= @id %></h1>
+
+<div>
+  <img src=<%= @current_user.photo %> alt=<%= "user-#{@current_user.id}" %> width="150" height="150"/>
+  <%= @current_user.name %>
+</div>
+<div>
+<%= @current_user.bio %>
+</div>
+
+<ul>
+<% @current_user.posts.each do |post| %>
+<li>
+    <a href=<%="#{@current_user.id }/posts/#{post.id }"%>>
+      <div>
+        <h2><%= post.title %></h2>
+        <p><%= post.text %></p>
+      </div>
+    </a>
+  </li>
+<% end %>
+</ul>
+<button type='button'>
+  <a href=<%="#{@current_user.id }/posts"%>>See all posts</a>
+</button>
