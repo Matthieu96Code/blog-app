@@ -1,1 +1,13 @@
-<h1>Here is a list of user</h1>
+<h1>Here is a list of user </h1>
+<ul>
+<% @users.each do |user| %>
+  <li>
+    <a href=<%="users/#{user.id }"%>>
+      <div>
+        <img src=<%= user.photo %> alt=<%="users-#{user.id }"%> width="150" height="150"/>
+        <p><%= user.name %></p>
+      </div>
+    </a>
+  </li>
+<% end %>
+</ul>
