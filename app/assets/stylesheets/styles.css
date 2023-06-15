@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+/* User page and partial */
+
+.user-card {
+  margin: 2rem;
+  display: flex;
+  border: solid 2px black;
+}
+
+.user-card a {
+  width: 100%;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card div {
+  align-self: flex-end;
+}
+
+.user-card h2 {
+  align-self: center;
+}
