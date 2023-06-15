@@ -9,11 +9,11 @@
     <% for post_i in 0...3 do %>
       <p><%='No posts' if !@current_user.posts[0]%></p>
       <% break if !@current_user.posts[post_i]%>
-        <li class="post-card">
+        <li class="posts-list">
           <%=render 'shared/post', post: @current_user.posts[post_i]%>
         </li>
       <%end%>
   </ul>
 </section >
 
-<button class="all-posts"><%= link_to "See all posts", user_posts_path(@current_user) %></button>
+<button class="btn all-posts"><%= link_to "See all posts", user_posts_path(@current_user) %></button>
