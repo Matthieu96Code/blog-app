@@ -13,6 +13,19 @@ ul {
   list-style: none;
 }
 
+/* User add post */
+
+.greeting {
+  margin: 2rem;
+}
+
+.btn-new-post {
+  margin: 0 0 0 2rem;
+  border: 2px solid green;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
 /* User page and partial */
 
 .user-card {
@@ -84,4 +97,41 @@ ul {
 
 .posts-show {
   margin-top: 2rem;
+}
+
+.post-form,
+.comment-form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-add-post,
+.btn-comment {
+  width: 8rem;
+  height: 2rem;
+  margin: 1rem 0;
+}
+
+.post-text,
+.post-title,
+.comment-text {
+  margin: 1rem 0;
+  width: 50%;
+  padding: 0.1rem;
+}
+
+.post-title {
+  height: 2rem;
+}
+
+.post-text,
+.comment-text {
+  height: 4rem;
+}
+
+.btn-like {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
 }
