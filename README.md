@@ -44,8 +44,9 @@
 - **Processing data in models.**
 - **Validations, Model specs, and n+1 problems.**
 - **Set controllers.**
-- **controllers specs.**
-- **views.**
+- **Controllers specs.**
+- **Views.**
+- **Forms.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

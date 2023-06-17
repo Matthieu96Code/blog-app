@@ -3,6 +3,8 @@
     <h2><%=@post.title%> by <%=@post.author.name%></h2>
     <div>Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></div>
     <div><%=@post.text%></div>
+    <%= button_to "Like", post_likes_path(@post), method: :post, class: 'btn-like' %>
   </div>
 </section>
   <%= render 'shared/comment', comments: @post.comments[0, 10]%>
+  <%= render 'shared/comment_form', post: @post, comment: @comment%>
