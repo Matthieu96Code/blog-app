@@ -18,29 +18,13 @@ describe 'GET posts#show', type: :feature do
     ]
 
     @posts = [
-      Post.create(
-        author: @users.first,
-        title: 'First Post',
-        text: 'This is my first post'
-      ),
-      Post.create(
-        author: @users.first,
-        title: 'Second Post',
-        text: 'This is my second post'
-      )
+      Post.create(author: @users.first, title: 'First Post', text: 'This is my first post'),
+      Post.create(author: @users.first, title: 'Second Post', text: 'This is my second post')
     ]
 
     @comments = [
-      Comment.create(
-        post: @posts.first,
-        author: @users.last,
-        text: 'Hi Tom!'
-      ),
-      Comment.create(
-        post: @posts.first,
-        author: @users.last,
-        text: 'Way to go! man'
-      )
+      Comment.create(post: @posts.first, author: @users.last, text: 'Hi Tom!'),
+      Comment.create(post: @posts.first, author: @users.last, text: 'Way to go! man')
     ]
 
     visit user_post_path(@users.first, @posts.first)
