@@ -1,9 +1,9 @@
 <%= render "shared/user", user: @user %>
 
-<% if @user.posts.empty? %>
+<% if @posts.empty? %>
         <p>No post</p>
     <% end %>
-    <% @user.posts.each do |post| %>
+    <% @posts.each do |post| %>
         <%= render "shared/post", post: post %>
         <%= render "shared/comment", comments: post.most_recent_comments[0, 5] %>
     <% end %>
