@@ -47,6 +47,7 @@
 - **Controllers specs.**
 - **Views.**
 - **Forms.**
+- **Integration Specs.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
