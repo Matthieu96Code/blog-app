@@ -83,7 +83,7 @@ RSpec.describe 'post#index', type: :feature do
     end
 
     it 'has first comments on a post' do
-      @posts.first.recent_comments.each do |comment|
+      @posts.first.most_recent_comments.each do |comment|
         expect(page).to have_content(comment.text)
       end
     end
@@ -106,7 +106,7 @@ RSpec.describe 'post#index', type: :feature do
   end
 
   it 'should redirect to the post details page' do
-    click_link('View More', href: user_post_path(@users.first, @posts.first))
-    expect(page).to have_current_path(user_post_path(@users.first, @posts.first))
+    click_link(href: user_post_path(@posts.first.author, @posts.first))
+    expect(page).to have_current_path(user_post_path(@posts.first.author, @posts.first))
   end
 end
