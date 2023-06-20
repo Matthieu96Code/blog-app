@@ -56,7 +56,7 @@ RSpec.describe 'GET users#show', type: :feature do
     end
 
     it "renders the user's first 3 posts " do
-      @users.first.recent_posts.each do |post|
+      @users.first.most_recent_posts.each do |post|
         expect(page).to have_content(post.title)
       end
     end
@@ -69,12 +69,12 @@ RSpec.describe 'GET users#show', type: :feature do
   describe "See all posts and user's post index page" do
     it 'should have the View More Button' do
       @posts.each do |post|
-        expect(page).to have_link('View More', href: user_post_path(@users.first, post))
+        expect(page).to have_link(href: user_post_path(post.author, post))
       end
     end
 
     it 'should redirect to the user details page' do
-      click_link('View More', href: user_post_path(@users.first, @posts.first))
+      click_link(href: user_post_path(@users.first, @posts.first))
       expect(page).to have_current_path(user_post_path(@users.first, @posts.first))
     end
   end
