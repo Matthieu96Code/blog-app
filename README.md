@@ -105,6 +105,12 @@ Run: rspec to run tests
 - Twitter: [@MatthieuSENOU](https://twitter.com/MatthieuSenou)
 - LinkedIn: [Kodjo Matthieu SENOU](https://www.linkedin.com/in/kodjo-matthieu-senou/)
 
+👤 **Esther Mawioo**
+
+- [Github](https://github.com/mumo-esther/mumo-esther)
+- [Linkedin](https://www.linkedin.com/in/esther-mawioo-58b636225/)
+- [Twitter](https://twitter.com/EstherMawioo)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
