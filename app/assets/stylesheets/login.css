@@ -1,4 +1,4 @@
-* general  */
+/* general */
 
 * {
   margin: 0;
@@ -22,14 +22,15 @@ ul {
 }
 
 .notice,
-.alert{
+.alert {
   margin-left: 20vw;
   margin-bottom: 1rem;
 }
 
-.alert~h2 {
+.alert~ h2 {
   margin-left: 20vw;
 }
+
 /* Form */
 
 .new_user {
@@ -48,15 +49,15 @@ ul {
 .field #user_email,
 .field #user_password,
 .field #user_password_confirmation,
-.actions input{
+.actions input {
   width: 100%;
   height: 2rem;
 }
 
 /* Login other link */
 
-[href="/users/sign_up"], 
-[href="/users/sign_in"], 
+[href="/users/sign_up"],
+[href="/users/sign_in"],
 [href="/users/password/new"],
 [href="/users/confirmation/new"] {
   margin-left: 20vw;
