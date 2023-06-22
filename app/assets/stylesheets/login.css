@@ -27,7 +27,7 @@ ul {
   margin-bottom: 1rem;
 }
 
-.alert~ h2 {
+.alert ~ h2 {
   margin-left: 20vw;
 }
 
