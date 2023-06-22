@@ -48,6 +48,7 @@
 - **Views.**
 - **Forms.**
 - **Integration Specs.**
+- **Add Devise.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
