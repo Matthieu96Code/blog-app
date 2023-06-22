@@ -8,4 +8,8 @@ class UsersController < ApplicationController
     @id = params[:id]
     @current_user = User.find(params[:id])
   end
+
+  # def user_params
+  #   params.require(:user).permit(:photo, :bio)
+  # end
 end
