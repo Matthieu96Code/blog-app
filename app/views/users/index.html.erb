@@ -1,4 +1,5 @@
 <h1 class='greeting'>Welcome</h1>
+<%= button_to "Logout", destroy_user_session_path, method: :delete, class: 'btn-logout'%>
 <div class='btn-new-post'><%= link_to "Create Post", new_post_path%></div>
 <ul>
 <% @users.each do |user| %>

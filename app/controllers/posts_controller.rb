@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.new(**post_parameters, likes_counter: 0, comments_counter: 0)
     if @post.save
-      redirect_to user_post_path(current_user, @post)
+      redirect_to user_post_path(@post.author, @post)
     else
       render :new, status: :unprocessable_entity
     end

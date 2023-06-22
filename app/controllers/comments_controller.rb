@@ -1,9 +1,9 @@
 class CommentsController < ApplicationController
   def create
     post = Post.find(params[:post_id])
-    @comment = post.comments.new(author: current_user, **comment_parameters)
+    @comment = post.comments.new(author: post.author, **comment_parameters)
     if @comment.save
-      redirect_to user_post_path(current_user, post)
+      redirect_to user_post_path(post.author, post)
     else
       render :new, status: :unprocessable_entity
     end

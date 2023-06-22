@@ -19,6 +19,13 @@ ul {
   margin: 2rem;
 }
 
+.btn-logout {
+  margin: 0 0 2rem 2rem;
+  border: 2px solid red;
+  padding: 0.5rem;
+  width: fit-content;
+}
+
 .btn-new-post {
   margin: 0 0 0 2rem;
   border: 2px solid green;
