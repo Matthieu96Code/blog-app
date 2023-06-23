@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     resources :comments, only: [:new, :create]
     resources :likes, only: [:create]
   end
+  
+  resources :posts, only: [:destroy]
+  resources :comments, only: [:destroy]
   # Defines the root path route ("/")
   # root "articles#index"
 end
