@@ -40,6 +40,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Setup and controllers.**
+- **Controllers specs.**
 - **Creating a data model.**
 - **Processing data in models.**
 - **Validations, Model specs, and n+1 problems.**
@@ -49,6 +50,7 @@
 - **Forms.**
 - **Integration Specs.**
 - **Add Devise.**
+- **Add authorization rules.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +121,9 @@ Run: rspec to run tests
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Integration specs for Views.**
-- [ ] **Add Device.**
-- [ ] **Add authorization rules.**
+- [ ] **More test.**
+- [ ] **improve styling.**
+- [ ] **Add more tables with interaction**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

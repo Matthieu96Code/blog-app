@@ -5,6 +5,10 @@
     <% comments.each do |comment| %>
       <li class="comment-card">
         <div><%=comment.author.name%> : <%=comment.text%></div>
+    
+        <% if can? :destroy, comment %>
+          <%= button_to "Delete Comment", comment_path(comment), method: :delete, class: 'btn-delete-comment'%>
+        <%end%>
       </li>
     <% end %>
   <% end %>

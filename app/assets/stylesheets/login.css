@@ -46,12 +46,18 @@ ul {
   margin: 1rem 0;
 }
 
+.field #user_name,
 .field #user_email,
 .field #user_password,
 .field #user_password_confirmation,
 .actions input {
   width: 100%;
   height: 2rem;
+}
+
+.field #user_bio {
+  width: 100%;
+  height: 4rem;
 }
 
 /* Login other link */
