@@ -8,7 +8,14 @@ class CommentsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+    
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
 
+    redirect_back(fallback_location: root_path)
+  end
+  
   private
 
   def comment_parameters
